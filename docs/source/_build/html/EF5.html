@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ensemble Framework For Flash Flood Forecast (EF5) &mdash; CREST-family 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Coupling with environmental models" href="coupling.html" />
+    <link rel="prev" title="CREST V3.x" href="crestV3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> CREST-family
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="crestV1.html">CREST Version 1.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crestV2.html">CREST V2.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crestV3.html">CREST V3.x</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ensemble Framework For Flash Flood Forecast (EF5)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#applications">Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coupling.html">Coupling with environmental models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CREST-family</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Ensemble Framework For Flash Flood Forecast (EF5)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/EF5.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ensemble-framework-for-flash-flood-forecast-ef5">
+<h1>Ensemble Framework For Flash Flood Forecast (EF5)<a class="headerlink" href="#ensemble-framework-for-flash-flood-forecast-ef5" title="Permalink to this headline"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>EF5 framework is developed by the University of Oklahoma and NOAA National Severe Storms Laboratory in Norman, Oklahoma.
+The essence of EF5 is to include more hydrologic models to confront uncertainties in model structure, parameterization, and data.</p>
+</div>
+<figure class="align-default" id="id9">
+<img alt="Schematic illustration of the EF5 framework" src="_images/EF5_frame.png" />
+<figcaption>
+<p><span class="caption-text">Figure 1. Schematic illustration of the EF5 framework. Credit: Flamig,Z., Vergara, H., &amp; Gourley, J.J., (2020) <a class="reference internal" href="#flamig2020" id="id1"><span>[flamig2020]</span></a> . Used under copyright Creative Common Attribution 4.0 License held by the Copernicus Publications.</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Zachary Flamig, Humberto Vergara, Jonanthan J. Gourley</p>
+</dd>
+<dt class="field-even">Year of publication</dt>
+<dd class="field-even"><p>2016</p>
+</dd>
+<dt class="field-odd">Programing language</dt>
+<dd class="field-odd"><p>C++</p>
+</dd>
+<dt class="field-even">Software repo</dt>
+<dd class="field-even"><p><a class="reference external" href="ef5.ou.edu">Official website</a> | <a class="reference external" href="https://github.com/HyDROSLab/EF5">Github</a></p>
+</dd>
+</dl>
+<section id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Framework description [<a class="reference external" href="https://gmd.copernicus.org/articles/13/4943/2020/">link1</a>] <a class="reference internal" href="#flamig2020" id="id3"><span>[flamig2020]</span></a></p></li>
+<li><p>US FLASH project (operational flash flood forecast at 1km) [<a class="reference external" href="flash.ou.edu">link2</a>] <a class="reference internal" href="#gourley2017" id="id4"><span>[gourley2017]</span></a></p></li>
+</ol>
+<figure class="align-default" id="id10">
+<img alt="Snapshot of FLASH system" src="_images/FLASH_snap.png" />
+<figcaption>
+<p><span class="caption-text">Figure 2. Snapshot of FLASH system running in real-time.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Capacity building [<a class="reference external" href="https://journals.ametsoc.org/view/journals/bams/98/8/bams-d-15-00130.1.xml?tab_body=abstract-display">link3</a>] <a class="reference internal" href="#clark2017" id="id5"><span>[clark2017]</span></a></p></li>
+<li><p>Hydrologic utility of satellite precipitation [<a class="reference external" href="https://www.mdpi.com/2072-4292/12/3/445">link4</a>] <a class="reference internal" href="#chen2020" id="id6"><span>[chen2020]</span></a></p></li>
+<li><p>Stream intermittency [<a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0022169421005692">link5</a>] <a class="reference internal" href="#gao2021" id="id7"><span>[gao2021]</span></a></p></li>
+</ol>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="flamig2020"><span class="brackets">flamig2020</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>)</span></dt>
+<dd><p>Flamig, Z. L., Vergara, H., &amp; Gourley, J. J. (2020). The Ensemble Framework For Flash Flood Forecasting (EF5) v1. 2: description and case study. Geoscientific Model Development, 13(10), 4943-4958.</p>
+</dd>
+<dt class="label" id="gourley2017"><span class="brackets"><a class="fn-backref" href="#id4">gourley2017</a></span></dt>
+<dd><p>Gourley, J. J., Flamig, Z. L., Vergara, H., Kirstetter, P. E., Clark, R. A., Argyle, E., … &amp; Howard, K. W. (2017). The FLASH project: Improving the tools for flash flood monitoring and prediction across the United States. Bulletin of the American Meteorological Society, 98(2), 361-372.</p>
+</dd>
+<dt class="label" id="clark2017"><span class="brackets"><a class="fn-backref" href="#id5">clark2017</a></span></dt>
+<dd><p>Clark, R. A., Flamig, Z. L., Vergara, H., Hong, Y., Gourley, J. J., Mandl, D. J., … &amp; Patterson, M. (2017). Hydrological modeling and capacity building in the Republic of Namibia. Bulletin of the American Meteorological Society, 98(8), 1697-1715.</p>
+</dd>
+<dt class="label" id="chen2020"><span class="brackets"><a class="fn-backref" href="#id6">chen2020</a></span></dt>
+<dd><p>Chen, M., Nabih, S., Brauer, N. S., Gao, S., Gourley, J. J., Hong, Z., … &amp; Hong, Y. (2020). Can remote sensing technologies capture the extreme precipitation event and its cascading hydrological response? A case study of Hurricane Harvey using EF5 modeling framework. Remote Sensing, 12(3), 445.</p>
+</dd>
+<dt class="label" id="gao2021"><span class="brackets"><a class="fn-backref" href="#id7">gao2021</a></span></dt>
+<dd><p>Gao, S., Chen, M., Li, Z., Cook, S., Allen, D., Neeson, T., … &amp; Hong, Y. (2021). Mapping Dynamic Non-Perennial Stream Networks Using High-Resolution Distributed Hydrologic Simulation: A Case Study in the Upper Blue River Basin. Journal of Hydrology, 126522.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="crestV3.html" class="btn btn-neutral float-left" title="CREST V3.x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="coupling.html" class="btn btn-neutral float-right" title="Coupling with environmental models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Zhi Li.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

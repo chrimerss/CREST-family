@@ -1,0 +1,17 @@
+﻿Symbols,Description,Source,Unit
+DEM,Digital Elevation Model,Remote sensing/survey,M
+FDIR,Flow direction,Derive from DEM,N/A
+FAC,Flow Accumulation,Derive from DEM,Cells or km^2
+S,Slope,Derive from DEM,Degree
+l,Distance between cells,Derive from DEM,M
+Wm1,Maximum soil water capacity at soil layer 1,Soil survey,mm
+Wm2,Maximum soil water capacity at soil layer 2,Soil survey,mm
+Wm3,Maximum soil water capacity at soil layer 3,Soil survey,mm
+b1,Exponent parameter of the VIC model at soil layer 1,Soil survey,N/A
+b2,Exponent parameter of the VIC model at soil layer 2,Soil survey,N/A
+b3,Exponent parameter of the VIC model at soil layer 3,Soil survey,N/A
+Ksat,Mean saturated hydraulic conductivity,Soil survey,mm/hr
+d,Vegetation coverage,Remote sensing,N/A
+LAI,Leaf Area Index,Remote sensing,m^2/m^2
+KF,Surface runoff velocity coefficient,N/A,m/s
+KS,Subsurface runoff velocity coefficient,N/A,m/s

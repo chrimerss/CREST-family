@@ -1,0 +1,14 @@
+﻿Symbols,Description,Source,Unit
+DEM,Digital Elevation Model,Remote sensing/survey,M
+FDIR,Flow direction,Derive from DEM,N/A
+FAC,Flow Accumulation,Derive from DEM,Cells or km^2
+S,Slope,Derive from DEM,Degree
+l,Distance between cells,Derive from DEM,M
+Wm,Maximum soil water capacity at bulk soil layer,Soil survey,mm
+b,Exponent parameter of the VIC model at bulk soil layer,Soil survey,N/A
+Ksat,Mean saturated hydraulic conductivity,Soil survey,mm/hr
+GWE,Exponent of the groundwater bucket,calibration or prior knowledge,N/A
+GWC,Coefficient of the groundwater bucket,calibration or prior knowledge,N/A
+Zgwmax,Aquifer depth,Geography survey,m
+KF,Surface runoff velocity coefficient,N/A,m/s
+KS,Subsurface runoff velocity coefficient,N/A,m/s

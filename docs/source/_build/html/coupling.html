@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coupling with environmental models &mdash; CREST-family 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Applications" href="applications.html" />
+    <link rel="prev" title="Ensemble Framework For Flash Flood Forecast (EF5)" href="EF5.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> CREST-family
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="crestV1.html">CREST Version 1.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crestV2.html">CREST V2.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crestV3.html">CREST V3.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EF5.html">Ensemble Framework For Flash Flood Forecast (EF5)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Coupling with environmental models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#weather-forecasting-model">Weather forecasting model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#snowmelt-model">Snowmelt model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#land-surface-model">Land surface model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#landslide-model">Landslide model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#groundwater-model">Groundwater model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="applications.html">Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CREST-family</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Coupling with environmental models</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/coupling.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coupling-with-environmental-models">
+<h1><a class="toc-backref" href="#id1">Coupling with environmental models</a><a class="headerlink" href="#coupling-with-environmental-models" title="Permalink to this headline"></a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#coupling-with-environmental-models" id="id1">Coupling with environmental models</a></p>
+<ul>
+<li><p><a class="reference internal" href="#weather-forecasting-model" id="id2">Weather forecasting model</a></p></li>
+<li><p><a class="reference internal" href="#snowmelt-model" id="id3">Snowmelt model</a></p></li>
+<li><p><a class="reference internal" href="#land-surface-model" id="id4">Land surface model</a></p></li>
+<li><p><a class="reference internal" href="#landslide-model" id="id5">Landslide model</a></p></li>
+<li><p><a class="reference internal" href="#groundwater-model" id="id6">Groundwater model</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="weather-forecasting-model">
+<h2><a class="toc-backref" href="#id2">Weather forecasting model</a><a class="headerlink" href="#weather-forecasting-model" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="blanon2018"><span class="brackets">Blanon2018</span></dt>
+<dd><p>Blanton, B., Dresback, K., Colle, B., Kolar, R., Vergara, H., Hong, Y., … &amp; Wachtendorf, T. (2020). An Integrated Scenario Ensemble‐Based Framework for Hurricane Evacuation Modeling: Part 2—Hazard Modeling. Risk analysis, 40(1), 117-133.</p>
+</dd>
+<dt class="label" id="yussouf2020"><span class="brackets">Yussouf2020</span></dt>
+<dd><p>Yussouf, N., Wilson, K. A., Martinaitis, S. M., Vergara, H., Heinselman, P. L., &amp; Gourley, J. J. (2020). The coupling of NSSL warn-on-forecast and FLASH systems for probabilistic flash flood prediction. Journal of Hydrometeorology, 21(1), 123-141.</p>
+</dd>
+</dl>
+</section>
+<section id="snowmelt-model">
+<h2><a class="toc-backref" href="#id3">Snowmelt model</a><a class="headerlink" href="#snowmelt-model" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="chen2017"><span class="brackets">Chen2017</span></dt>
+<dd><p>Chen, X., Long, D., Hong, Y., Zeng, C., &amp; Yan, D. (2017). Improved modeling of snow and glacier melting by a progressive two‐stage calibration strategy with GRACE and multisource data: How snow and glacier meltwater contributes to the runoff of the Upper Brahmaputra River basin?. Water Resources Research, 53(3), 2431-2466.</p>
+</dd>
+</dl>
+</section>
+<section id="land-surface-model">
+<h2><a class="toc-backref" href="#id4">Land surface model</a><a class="headerlink" href="#land-surface-model" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="shen2017"><span class="brackets">Shen2017</span></dt>
+<dd><p>Shen, X., &amp; Anagnostou, E. N. (2017). A framework to improve hyper-resolution hydrological simulation in snow-affected regions. Journal of hydrology, 552, 1-12.</p>
+</dd>
+</dl>
+</section>
+<section id="landslide-model">
+<h2><a class="toc-backref" href="#id5">Landslide model</a><a class="headerlink" href="#landslide-model" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="he2016"><span class="brackets">He2016</span></dt>
+<dd><p>He, X., Hong, Y., Vergara, H., Zhang, K., Kirstetter, P. E., Gourley, J. J., … &amp; Liu, C. (2016). Development of a coupled hydrological-geotechnical framework for rainfall-induced landslides prediction. Journal of Hydrology, 543, 395-405.</p>
+</dd>
+<dt class="label" id="zhang2016"><span class="brackets">Zhang2016</span></dt>
+<dd><p>Zhang, K., Xue, X., Hong, Y., Gourley, J. J., Lu, N., Wan, Z., … &amp; Wooten, R. (2016). iCRESTRIGRS: a coupled modeling system for cascading flood–landslide disaster forecasting. Hydrology and Earth System Sciences, 20(12), 5035-5048.</p>
+</dd>
+</dl>
+</section>
+<section id="groundwater-model">
+<h2><a class="toc-backref" href="#id6">Groundwater model</a><a class="headerlink" href="#groundwater-model" title="Permalink to this headline"></a></h2>
+<p>Coupled with MODFLOW for one of the groundwater-fed stream in Africa.</p>
+<dl class="citation">
+<dt class="label" id="khadim2020"><span class="brackets">Khadim2020</span></dt>
+<dd><p>Khadim, F. K., Dokou, Z., Lazin, R., Moges, S., Bagtzoglou, A. C., &amp; Anagnostou, E. (2020). Groundwater modeling in data scarce aquifers: the case of Gilgel-Abay, Upper Blue Nile, Ethiopia. Journal of Hydrology, 590, 125214.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="EF5.html" class="btn btn-neutral float-left" title="Ensemble Framework For Flash Flood Forecast (EF5)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="applications.html" class="btn btn-neutral float-right" title="Applications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Zhi Li.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

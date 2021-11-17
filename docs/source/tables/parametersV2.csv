@@ -1,0 +1,18 @@
+﻿Symbols,Description,Source,Unit
+DEM,Digital Elevation Model,Remote sensing/survey,M
+FDIR,Flow direction,Derive from DEM,N/A
+FAC,Flow Accumulation,Derive from DEM,Cells or km^2
+S,Slope,Derive from DEM,Degree
+stream,stream grid; 0-land; 1-river,Derive from DEM,N/A
+RainFact,The multiplier on the precipitation field,prior knowledge,N/A
+Wm,Maximum soil water capacity at bulk soil layer,Soil survey,mm
+B,Exponent parameter of the VIC model at bulk soil layer,Soil survey,N/A
+Ksat,Mean saturated hydraulic conductivity,Soil survey,mm/hr
+IM,The impervious area ratio,land cover,%
+LAI,Leaf Area Index,Remote sensing,m^2/m^2
+coeM,The overland runoff velocity coefficient,N/A,N/A
+expM,The overland runoff velocity exponent,N/A,N/A
+coeR,multiplier to converrt overland flow speed to in-channel water flow speed,N/A,N/A
+coeS,multiplier to converrt subsurface flow speed to in-channel water flow speed,N/A,N/A
+KS,Surface runoff velocity coefficient,N/A,m/s
+KI,Subsurface runoff velocity coefficient,N/A,m/s

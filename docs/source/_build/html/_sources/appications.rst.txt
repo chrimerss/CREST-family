@@ -1,0 +1,27 @@
+Applications
+================
+
+.. contents::
+
+.. Note:: As of 11/02/2021, the CREST model has been used in worldwide applications.
+    As shown in Figure 1, there are 29 countries have published their works using CREST model family (excluding global implementation and non journal articles).
+
+.. figure:: images/applications_per_country.png
+    :alt: applications per country
+
+    Figure 1. Map of applications per country, grouped by primary purpose.
+
+Evaluating hydrologic utility of remote sensing precipitation products
+-----------------------------
+
+Flood simulation and forecasting
+------------------------------
+
+Water resources management
+------------------------------
+
+Hydrologic prediction in ungauged basins (PUB)
+------------------------------
+
+Capacity building and outreach
+-------------------------------

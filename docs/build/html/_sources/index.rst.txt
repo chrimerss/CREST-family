@@ -3,12 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CREST-family's documentation!
+Welcome to CREST-family!
 ========================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   crestV1
+   crestV2
+   crestV3
+   EF5
+   coupling
+   applications
+   contributing
+   references
+   
+
 
 
 
@@ -18,3 +29,11 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. Note:: The CREST model, namely Coupled Routing and Excess STorage, developed at the University of Oklahoma and National Aeronautics and Space Administration (NASA), is a distributed hydrologic model aiming to but not limited to predicting riverine floods in a fast implementation. 
+
+.. figure:: images/CREST_evo.png
+   :alt: CREST model structure
+
+   Figure 1. Map of showing CREST model evolution.
+

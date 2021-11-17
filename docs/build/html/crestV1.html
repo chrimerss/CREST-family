@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CREST Version 1.x &mdash; CREST-family 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CREST V2.x" href="crestV2.html" />
+    <link rel="prev" title="Welcome to CREST-family!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> CREST-family
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CREST Version 1.x</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#crest-v1-0">CREST V1.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#applications">Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#crest-v1-6">CREST V1.6</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#publications">Publications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="crestV2.html">CREST V2.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="crestV3.html">CREST V3.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EF5.html">Ensemble Framework For Flash Flood Forecast (EF5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coupling.html">Coupling with environmental models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CREST-family</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>CREST Version 1.x</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/crestV1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="crest-version-1-x">
+<h1><a class="toc-backref" href="#id15">CREST Version 1.x</a><a class="headerlink" href="#crest-version-1-x" title="Permalink to this headline"></a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#crest-version-1-x" id="id15">CREST Version 1.x</a></p>
+<ul>
+<li><p><a class="reference internal" href="#crest-v1-0" id="id16">CREST V1.0</a></p>
+<ul>
+<li><p><a class="reference internal" href="#applications" id="id17">Applications</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#crest-v1-6" id="id18">CREST V1.6</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id19">Applications</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#publications" id="id20">Publications</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>CREST model V1.x, a distributed hydrologic model, is jointly developed at the University of Oklahoma and NASA.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CREST model V1.x is an initial publication, featuring hydrologic processes including
+canopy interception, Variable Infiltration Curve for soil infiltration, three cascading soil layers,
+Linear Reservoir Routing for surface flow and subsurface flow</p>
+</div>
+<figure class="align-default" id="id12">
+<span id="id1"></span><img alt="CREST V1.x structure" src="_images/CRESTV1x.png" />
+<figcaption>
+<p><span class="caption-text">Figure 1. CREST V1.x model structure</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<span id="id2"></span><table class="colwidths-given docutils align-default" id="id13">
+<caption><span class="caption-text">Table 1. CREST V1.x parameters table</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbols</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Source</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>DEM</p></td>
+<td><p>Digital Elevation Model</p></td>
+<td><p>Remote sensing/survey</p></td>
+<td><p>M</p></td>
+</tr>
+<tr class="row-odd"><td><p>FDIR</p></td>
+<td><p>Flow direction</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>FAC</p></td>
+<td><p>Flow Accumulation</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>Cells or km^2</p></td>
+</tr>
+<tr class="row-odd"><td><p>S</p></td>
+<td><p>Slope</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>Degree</p></td>
+</tr>
+<tr class="row-even"><td><p>l</p></td>
+<td><p>Distance between cells</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>M</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wm1</p></td>
+<td><p>Maximum soil water capacity at soil layer 1</p></td>
+<td><p>Soil survey</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Wm2</p></td>
+<td><p>Maximum soil water capacity at soil layer 2</p></td>
+<td><p>Soil survey</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Wm3</p></td>
+<td><p>Maximum soil water capacity at soil layer 3</p></td>
+<td><p>Soil survey</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-even"><td><p>b1</p></td>
+<td><p>Exponent parameter of the VIC model at soil layer 1</p></td>
+<td><p>Soil survey</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>b2</p></td>
+<td><p>Exponent parameter of the VIC model at soil layer 2</p></td>
+<td><p>Soil survey</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>b3</p></td>
+<td><p>Exponent parameter of the VIC model at soil layer 3</p></td>
+<td><p>Soil survey</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ksat</p></td>
+<td><p>Mean saturated hydraulic conductivity</p></td>
+<td><p>Soil survey</p></td>
+<td><p>mm/hr</p></td>
+</tr>
+<tr class="row-even"><td><p>d</p></td>
+<td><p>Vegetation coverage</p></td>
+<td><p>Remote sensing</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>LAI</p></td>
+<td><p>Leaf Area Index</p></td>
+<td><p>Remote sensing</p></td>
+<td><p>m^2/m^2</p></td>
+</tr>
+<tr class="row-even"><td><p>KF</p></td>
+<td><p>Surface runoff velocity coefficient</p></td>
+<td><p>N/A</p></td>
+<td><p>m/s</p></td>
+</tr>
+<tr class="row-odd"><td><p>KS</p></td>
+<td><p>Subsurface runoff velocity coefficient</p></td>
+<td><p>N/A</p></td>
+<td><p>m/s</p></td>
+</tr>
+</tbody>
+</table>
+<section id="crest-v1-0">
+<h2><a class="toc-backref" href="#id16">CREST V1.0</a><a class="headerlink" href="#crest-v1-0" title="Permalink to this headline"></a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jiahu Wang, Sadiq Khan, Yang Hong</p>
+</dd>
+<dt class="field-even">Year of publication</dt>
+<dd class="field-even"><p>2011</p>
+</dd>
+<dt class="field-odd">Software repo</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://hydro.ou.edu/research/crest/">http://hydro.ou.edu/research/crest/</a></p>
+</dd>
+<dt class="field-even">Program language</dt>
+<dd class="field-even"><p>Fortran</p>
+</dd>
+</dl>
+<section id="applications">
+<h3><a class="toc-backref" href="#id17">Applications</a><a class="headerlink" href="#applications" title="Permalink to this headline"></a></h3>
+<ol class="arabic simple">
+<li><p>Description of initial version of CREST model [<a class="reference external" href="https://www.tandfonline.com/doi/full/10.1080/02626667.2010.543087">link1</a>] <a class="reference internal" href="#wang2011" id="id4"><span>[Wang2011]</span></a></p></li>
+<li><p>Microwave Satellite Data for Hydrologic Modeling in Ungauged Basins [<a class="reference external" href="https://ieeexplore.ieee.org/document/5559412">link2</a>] <a class="reference internal" href="#khan2010" id="id5"><span>[Khan2010]</span></a></p></li>
+<li><p>Hydroclimatology of Lake Victoria region using hydrologic model and satellite remote sensing [<a class="reference external" href="https://hess.copernicus.org/articles/15/107/2011/">link3</a>] <a class="reference internal" href="#khan2011" id="id6"><span>[Khan2011]</span></a></p></li>
+</ol>
+</section>
+</section>
+<section id="crest-v1-6">
+<h2><a class="toc-backref" href="#id18">CREST V1.6</a><a class="headerlink" href="#crest-v1-6" title="Permalink to this headline"></a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Huan Wu, Sadiq Khan, Xianwu Xue, Yang Hong</p>
+</dd>
+<dt class="field-even">Year of publication</dt>
+<dd class="field-even"><p>2012</p>
+</dd>
+<dt class="field-odd">Software repo</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://hydro.ou.edu/research/crest/">http://hydro.ou.edu/research/crest/</a></p>
+</dd>
+<dt class="field-even">Program language</dt>
+<dd class="field-even"><p>Fortran</p>
+</dd>
+</dl>
+<section id="id7">
+<h3><a class="toc-backref" href="#id19">Applications</a><a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<ol class="arabic simple">
+<li><p>Flood simulation [<a class="reference external" href="https://www.researchgate.net/profile/Muhammet-Dis/publication/281618104_Evaluating_Multi-Scale_Flow_Predictions_for_the_Connecticut_River_Basin/links/569772ee08aea2d7437568d6/Evaluating-Multi-Scale-Flow-Predictions-for-the-Connecticut-River-Basin.pdf">link4</a>] <a class="reference internal" href="#anagnostou2015" id="id8"><span>[Anagnostou2015]</span></a></p></li>
+<li><p>Global Flood Detection [<a class="reference external" href="https://doi.org/10.1175/JHM-D-11-087.1">link5</a>] <a class="reference internal" href="#wu2012" id="id9"><span>[Wu2012]</span></a></p></li>
+<li><p>Evaluation of hydrologic utility of the Satellite precipitation dataset [<a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0022169413008731">link6</a>] <a class="reference internal" href="#meng2014" id="id10"><span>[Meng2014]</span></a></p></li>
+<li><p>Global Flood Forecast [<a class="reference external" href="https://doi.org/10.1175/JHM-D-14-0048.1">link7</a>] <a class="reference internal" href="#zhang2015" id="id11"><span>[Zhang2015]</span></a></p></li>
+</ol>
+</section>
+</section>
+<section id="publications">
+<h2><a class="toc-backref" href="#id20">Publications</a><a class="headerlink" href="#publications" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="wang2011"><span class="brackets"><a class="fn-backref" href="#id4">Wang2011</a></span></dt>
+<dd><p>Wang, J., Hong, Y., Li, L., Gourley, J. J., Khan, S. I., Yilmaz, K. K., … &amp; Okello, L. (2011). The coupled routing and excess storage (CREST) distributed hydrological model. Hydrological sciences journal, 56(1), 84-98.</p>
+</dd>
+<dt class="label" id="khan2010"><span class="brackets"><a class="fn-backref" href="#id5">Khan2010</a></span></dt>
+<dd><p>Khan, S. I., Hong, Y., Wang, J., Yilmaz, K. K., Gourley, J. J., Adler, R. F., … &amp; Irwin, D. (2010). Satellite remote sensing and hydrologic modeling for flood inundation mapping in Lake Victoria basin: Implications for hydrologic prediction in ungauged basins. IEEE Transactions on Geoscience and Remote Sensing, 49(1), 85-95.</p>
+</dd>
+<dt class="label" id="khan2011"><span class="brackets"><a class="fn-backref" href="#id6">Khan2011</a></span></dt>
+<dd><p>Khan, S. I., Adhikari, P., Hong, Y., Vergara, H., F Adler, R., Policelli, F., … &amp; Okello, L. (2011). Hydroclimatology of Lake Victoria region using hydrologic model and satellite remote sensing data. Hydrology and Earth System Sciences, 15(1), 107-117.</p>
+</dd>
+<dt class="label" id="anagnostou2015"><span class="brackets"><a class="fn-backref" href="#id8">Anagnostou2015</a></span></dt>
+<dd><p>Anagnostou, E., Zac, F., Vergara, H., &amp; Hong, Y. (2015). Evaluating multi-scale flow predictions for the Connecticut River Basin. Hydrology: Current Research, 6(2), 1.</p>
+</dd>
+<dt class="label" id="wu2012"><span class="brackets"><a class="fn-backref" href="#id9">Wu2012</a></span></dt>
+<dd><p>Wu, H., Adler, R. F., Hong, Y., Tian, Y., &amp; Policelli, F. (2012). Evaluation of global flood detection using satellite-based rainfall and a hydrologic model. Journal of Hydrometeorology, 13(4), 1268-1284.</p>
+</dd>
+<dt class="label" id="meng2014"><span class="brackets"><a class="fn-backref" href="#id10">Meng2014</a></span></dt>
+<dd><p>Meng, J., Li, L., Hao, Z., Wang, J., &amp; Shao, Q. (2014). Suitability of TRMM satellite rainfall in driving a distributed hydrological model in the source region of Yellow River. Journal of Hydrology, 509, 320-332.</p>
+</dd>
+<dt class="label" id="zhang2015"><span class="brackets"><a class="fn-backref" href="#id11">Zhang2015</a></span></dt>
+<dd><p>Zhang, Y., Hong, Y., Wang, X., Gourley, J. J., Xue, X., Saharia, M., … &amp; Tang, G. (2015). Hydrometeorological analysis and remote sensing of extremes: Was the July 2012 Beijing flood event detectable and predictable by global satellite observing and global weather modeling systems?. Journal of hydrometeorology, 16(1), 381-395.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to CREST-family!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="crestV2.html" class="btn btn-neutral float-right" title="CREST V2.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Zhi Li.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CREST V2.x &mdash; CREST-family 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CREST V3.x" href="crestV3.html" />
+    <link rel="prev" title="CREST Version 1.x" href="crestV1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> CREST-family
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="crestV1.html">CREST Version 1.x</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CREST V2.x</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#crest-v2-0">CREST V2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#applications">Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#crest-v2-1">CREST V2.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="crestV3.html">CREST V3.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EF5.html">Ensemble Framework For Flash Flood Forecast (EF5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coupling.html">Coupling with environmental models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CREST-family</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>CREST V2.x</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/crestV2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="crest-v2-x">
+<h1><a class="toc-backref" href="#id15">CREST V2.x</a><a class="headerlink" href="#crest-v2-x" title="Permalink to this headline"></a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#crest-v2-x" id="id15">CREST V2.x</a></p>
+<ul>
+<li><p><a class="reference internal" href="#crest-v2-0" id="id16">CREST V2.0</a></p>
+<ul>
+<li><p><a class="reference internal" href="#applications" id="id17">Applications</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#crest-v2-1" id="id18">CREST V2.1</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id7" id="id19">Applications</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#references" id="id20">References</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CREST model V2.x supports a set of new features compared to CREST V1.x, including:</p>
+<ol class="arabic simple">
+<li><p>activating distributed parameters over regions where remotely sensed data is available</p></li>
+<li><p>the replacement of three soil layers to one bulk soil layer</p></li>
+<li><p>including impervious area ratio parameter to emulate fast runoff generation</p></li>
+<li><p>including a rainfall multiplier parameter to overcome bias</p></li>
+<li><p>automatic calibration using the SCE-UA algorithm (Duan et al., 1992)</p></li>
+<li><p>parallel computing</p></li>
+<li><p>modular design framework.</p></li>
+</ol>
+</div>
+<figure class="align-default" id="id12">
+<span id="id1"></span><img alt="CREST V2.x structure" src="_images/CRESTV2x.png" />
+<figcaption>
+<p><span class="caption-text">Figure 2. CREST V2.x model structure</span><a class="headerlink" href="#id12" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<table class="colwidths-given docutils align-default" id="id13">
+<caption><span class="caption-text">Table 1. CREST V2.x parameters table</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbols</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Source</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>DEM</p></td>
+<td><p>Digital Elevation Model</p></td>
+<td><p>Remote sensing/survey</p></td>
+<td><p>M</p></td>
+</tr>
+<tr class="row-odd"><td><p>FDIR</p></td>
+<td><p>Flow direction</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>FAC</p></td>
+<td><p>Flow Accumulation</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>Cells or km^2</p></td>
+</tr>
+<tr class="row-odd"><td><p>S</p></td>
+<td><p>Slope</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>Degree</p></td>
+</tr>
+<tr class="row-even"><td><p>stream</p></td>
+<td><p>stream grid; 0-land; 1-river</p></td>
+<td><p>Derive from DEM</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>RainFact</p></td>
+<td><p>The multiplier on the precipitation field</p></td>
+<td><p>prior knowledge</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>Wm</p></td>
+<td><p>Maximum soil water capacity at bulk soil layer</p></td>
+<td><p>Soil survey</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>Exponent parameter of the VIC model at bulk soil layer</p></td>
+<td><p>Soil survey</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>Ksat</p></td>
+<td><p>Mean saturated hydraulic conductivity</p></td>
+<td><p>Soil survey</p></td>
+<td><p>mm/hr</p></td>
+</tr>
+<tr class="row-odd"><td><p>IM</p></td>
+<td><p>The impervious area ratio</p></td>
+<td><p>land cover</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-even"><td><p>LAI</p></td>
+<td><p>Leaf Area Index</p></td>
+<td><p>Remote sensing</p></td>
+<td><p>m^2/m^2</p></td>
+</tr>
+<tr class="row-odd"><td><p>coeM</p></td>
+<td><p>The overland runoff velocity coefficient</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>expM</p></td>
+<td><p>The overland runoff velocity exponent</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>coeR</p></td>
+<td><p>multiplier to converrt overland flow speed to in-channel water flow speed</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td><p>coeS</p></td>
+<td><p>multiplier to converrt subsurface flow speed to in-channel water flow speed</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-odd"><td><p>KS</p></td>
+<td><p>Surface runoff velocity coefficient</p></td>
+<td><p>N/A</p></td>
+<td><p>m/s</p></td>
+</tr>
+<tr class="row-even"><td><p>KI</p></td>
+<td><p>Subsurface runoff velocity coefficient</p></td>
+<td><p>N/A</p></td>
+<td><p>m/s</p></td>
+</tr>
+</tbody>
+</table>
+<section id="crest-v2-0">
+<h2><a class="toc-backref" href="#id16">CREST V2.0</a><a class="headerlink" href="#crest-v2-0" title="Permalink to this headline"></a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Xianwu Xue, Yang Hong,</p>
+</dd>
+<dt class="field-even">Year of publication</dt>
+<dd class="field-even"><p>2013</p>
+</dd>
+<dt class="field-odd">Software repo</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://hydro.ou.edu/research/crest/">HyDROS</a></p>
+</dd>
+<dt class="field-even">Program language</dt>
+<dd class="field-even"><p>Fortran</p>
+</dd>
+</dl>
+<section id="applications">
+<h3><a class="toc-backref" href="#id17">Applications</a><a class="headerlink" href="#applications" title="Permalink to this headline"></a></h3>
+<ol class="arabic simple">
+<li><p>Description of CREST V2.0 [<a class="reference external" href="https://doi.org/10.1016/j.jhydrol.2013.06.042">link1</a>] <a class="reference internal" href="#xue2013" id="id3"><span>[Xue2013]</span></a></p></li>
+<li><p>Hydrologic utility of satellite precipitation products [<a class="reference external" href="https://doi.org/10.1175/JHM-D-15-0059.1">link2</a>] <a class="reference internal" href="#tang2016" id="id4"><span>[Tang2016]</span></a></p></li>
+</ol>
+</section>
+</section>
+<section id="crest-v2-1">
+<h2><a class="toc-backref" href="#id18">CREST V2.1</a><a class="headerlink" href="#crest-v2-1" title="Permalink to this headline"></a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Xinyi Shen, J.J. Gourley, Yang Hong,</p>
+</dd>
+<dt class="field-even">Year of publication</dt>
+<dd class="field-even"><p>2017</p>
+</dd>
+<dt class="field-odd">Software repo</dt>
+<dd class="field-odd"><p><a class="reference external" href="http://hydro.ou.edu/research/crest/">HyDROS</a></p>
+</dd>
+<dt class="field-even">Program language</dt>
+<dd class="field-even"><p>Matlab</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CREST V2.1 improves routing scheme in CREST V2.0, from its original Quasi-Distributed Linear Reservoir Routing (QDLRR) to Fully-Distributed Linear Reservoir Routing (FDLRR)</p>
+</div>
+<section id="id7">
+<h3><a class="toc-backref" href="#id19">Applications</a><a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<ol class="arabic simple">
+<li><p>Description of CREST V2.1 [<a class="reference external" href="https://doi.org/10.1175/JHM-D-15-0059.1">link3</a>] <a class="reference internal" href="#shen2017" id="id8"><span>[Shen2017]</span></a></p></li>
+<li><p>Parameter uncertainties in CREST V2.1 [<a class="reference external" href="https://doi.org/10.1016/j.jhydrol.2018.07.055">link4</a>] <a class="reference internal" href="#gan2018" id="id9"><span>[Gan2018]</span></a></p></li>
+<li><p>Water resources management [<a class="reference external" href="https://link.springer.com/article/10.1007/s11269-019-2190-y">link5</a>] <a class="reference internal" href="#lakew2020" id="id10"><span>[Lakew2020]</span></a></p></li>
+<li><p>Flood simulation [<a class="reference external" href="https://doi.org/10.1111/risa.13004">link6</a>] <a class="reference internal" href="#blanton2020" id="id11"><span>[Blanton2020]</span></a></p></li>
+</ol>
+</section>
+</section>
+<section id="references">
+<h2><a class="toc-backref" href="#id20">References</a><a class="headerlink" href="#references" title="Permalink to this headline"></a></h2>
+<dl class="citation">
+<dt class="label" id="xue2013"><span class="brackets"><a class="fn-backref" href="#id3">Xue2013</a></span></dt>
+<dd><p>Xue, X., Hong, Y., Limaye, A. S., Gourley, J. J., Huffman, G. J., Khan, S. I., … &amp; Chen, S. (2013). Statistical and hydrological evaluation of TRMM-based Multi-satellite Precipitation Analysis over the Wangchu Basin of Bhutan: Are the latest satellite precipitation products 3B42V7 ready for use in ungauged basins?. Journal of Hydrology, 499, 91-99.</p>
+</dd>
+<dt class="label" id="tang2016"><span class="brackets"><a class="fn-backref" href="#id4">Tang2016</a></span></dt>
+<dd><p>Tang, G., Zeng, Z., Long, D., Guo, X., Yong, B., Zhang, W., &amp; Hong, Y. (2016). Statistical and hydrological comparisons between TRMM and GPM level-3 products over a midlatitude basin: Is day-1 IMERG a good successor for TMPA 3B42V7?. Journal of Hydrometeorology, 17(1), 121-137.</p>
+</dd>
+<dt class="label" id="shen2017"><span class="brackets"><a class="fn-backref" href="#id8">Shen2017</a></span></dt>
+<dd><p>Shen, X., Hong, Y., Zhang, K., &amp; Hao, Z. (2017a). Refining a distributed linear reservoir routing method to improve performance of the CREST model. Journal of hydrologic engineering, 22(3), 04016061.</p>
+</dd>
+<dt class="label" id="gan2018"><span class="brackets"><a class="fn-backref" href="#id9">Gan2018</a></span></dt>
+<dd><p>Gan, Y., Liang, X. Z., Duan, Q., Ye, A., Di, Z., Hong, Y., &amp; Li, J. (2018). A systematic assessment and reduction of parametric uncertainties for a distributed hydrological model. Journal of hydrology, 564, 697-711.</p>
+</dd>
+<dt class="label" id="lakew2020"><span class="brackets"><a class="fn-backref" href="#id10">Lakew2020</a></span></dt>
+<dd><p>Lakew, H. B., Moges, S. A., Anagnostou, E. N., Nikolopoulos, E. I., &amp; Asfaw, D. H. (2020). Evaluation of global water resources reanalysis runoff products for local water resources applications: case study-upper Blue Nile basin of Ethiopia. Water Resources Management, 34(7), 2157-2177.</p>
+</dd>
+<dt class="label" id="blanton2020"><span class="brackets"><a class="fn-backref" href="#id11">Blanton2020</a></span></dt>
+<dd><p>Blanton, B., Dresback, K., Colle, B., Kolar, R., Vergara, H., Hong, Y., … &amp; Wachtendorf, T. (2020). An Integrated Scenario Ensemble‐Based Framework for Hurricane Evacuation Modeling: Part 2—Hazard Modeling. Risk analysis, 40(1), 117-133.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="crestV1.html" class="btn btn-neutral float-left" title="CREST Version 1.x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="crestV3.html" class="btn btn-neutral float-right" title="CREST V3.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Zhi Li.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
