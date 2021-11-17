@@ -1,4 +1,4 @@
-CREST V3.x
+CREST Version 3.x
 ===============
 
 .. Note:: CREST V3.x, on top of V2.x, adds a conceptual groundwater module, hoping to extend CREST model capacity in simulatng groundwater-fed streams.

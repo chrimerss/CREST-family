@@ -1,4 +1,4 @@
-CREST V2.x
+CREST Version 2.x
 ===============
 
 .. contents::
