@@ -37,3 +37,6 @@ Indices and tables
 
    Figure 1. Map of showing CREST model evolution.
 
+
+Reference:
+Li, Z., Xue, X., Clark, R., Vergara, H., Gourley, J., Tang, G., Shen, X., Kan, G., Zhang, K., Wang, J., Chen, M., Gao, S., Zhang, J., Yang, T., Wen, Y., Kirstetter, P., Hong, T. A decadal review of the CREST model family: Developments, applications, and outlook, Submitted to Hydrological Science Journal, 2023.
