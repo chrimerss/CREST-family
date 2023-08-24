@@ -39,4 +39,7 @@ Indices and tables
 
 
 Reference:
-Li, Z., Xue, X., Clark, R., Vergara, H., Gourley, J., Tang, G., Shen, X., Kan, G., Zhang, K., Wang, J., Chen, M., Gao, S., Zhang, J., Yang, T., Wen, Y., Kirstetter, P., Hong, T. A decadal review of the CREST model family: Developments, applications, and outlook, Submitted to Journal of Hydrology, 2023.
+Li, Z., Xue, X., Clark, R., Vergara, H., Gourley, J., Tang, G., Shen, X., Kan, G., Zhang, K., Wang, J., Chen, M., Gao, S., Zhang, J., Yang, T., Wen, Y., Kirstetter, P., Hong, T. A decadal review of the CREST model family: Developments, applications, and outlook, Journal of Hydrology X, 2023.
+
+
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5mlechl9s61&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
